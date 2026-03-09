@@ -20,6 +20,23 @@ only takes in seconds.
 You will need to write a conversion algorithm to change
 minutes to seconds.
 
+
+# import time
+
+# time_min = int(input(" How many minutes do you want to study for? : "))
+# while True:
+#     if time_min == 0:
+#         break
+#     print(f"{time_min} minutes left" )
+#     time.sleep(1)
+#     time_min -= 1
+# print("RINGGG!!! Hope you enjoyed your studying:)")
+
+# while time_min != 0:
+#     print(f"{time_min} minutes left" )
+#     time.sleep(1)
+#     time_min -= 1
+# print("RINGGG!!! Hope you enjoyed your studying:)")
 ---------------------------------------------------------------
 
 ## Task 2: Allowance Savings Tracker
