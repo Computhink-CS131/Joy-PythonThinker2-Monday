@@ -79,8 +79,8 @@
 # Hint: Use a while loop to check if the number already exists in
 # the loop
 
-import random
-lucky_num_list = []
+# import random
+# lucky_num_list = []
 # for i in range(100):
 #     lucky_num_list.append(random.randint(1, 1000))
 # print(lucky_num_list)
@@ -169,9 +169,9 @@ poke = [
 ]
 
 powers = [
-    55, 135, 49, 48, 35,
+    85, 135, 49, 48, 35,
     45, 52, 101, 119, 140,
-    85, 65, 83, 130, 99,
+    85, 65, 83, 130, 79,
     150, 125, 65, 110, 124
 ]
 poke1 = random.choice(poke)

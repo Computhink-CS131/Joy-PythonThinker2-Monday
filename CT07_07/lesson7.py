@@ -81,15 +81,15 @@
 # are each seated in a pair. However, you want to unpack
 # the nested lists in order to have a list of all students.
 
-nested_list = [[1, 2], [3, 4], [5, 6]]
+# nested_list = [[1, 2], [3, 4], [5, 6]]
 
 # 1. Use a loop or list comprehension to flatten the list.
 # 2. Print the flattened list.
 
-list3 = []
-for list1 in nested_list:
-    for item in list1:
-        list3.append(item)
+# list3 = []
+# for list1 in nested_list:
+#     for item in list1:
+#         list3.append(item)
 # ---------------------------------------------------------------
 
 # ## Task 9: Partitioning a List into Smaller Lists
@@ -99,9 +99,9 @@ for list1 in nested_list:
 # Given a list and a size, split the list into multiple
 # sub-lists where each sub-list is of the given size.
 
-students = [1, 2, 3, 4, 5, 6, 7, 8, 9] # 123 456 789 0 3 6
-size = 3
-new_list = []
+# students = [1, 2, 3, 4, 5, 6, 7, 8, 9] # 123 456 789 0 3 6
+# size = 3
+# new_list = []
 
 # 1. Use a loop to create sub-lists of the specified size.
 # 2. Print the sub-lists.
