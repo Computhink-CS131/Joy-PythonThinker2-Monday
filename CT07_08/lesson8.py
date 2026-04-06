@@ -231,37 +231,37 @@ student_indexes = [1042, 1099, 1031, 1120, 1075, 1042, 1108, 1019, 1063, 1099, 1
 # 3. Have 7 digits between the alphabets
 # 4. Be 9 characters long
 
-# first_letter = ["S", "T", "F", "G", "M"]
-# first_last_letter_is_upper = False
-# first_letter_is_in_list = False
-# between_is_seven_digit = False
-# nine_characters = False
+first_letter = ["S", "T", "F", "G", "M"]
+first_last_letter_is_upper = False
+first_letter_is_in_list = False
+between_is_seven_digit = False
+nine_characters = False
 
-# while True:
-#     nric = input("What is your NRIC? : ").strip()
+while True:
+    nric = input("What is your NRIC? : ").strip()
 
-#     if nric == "":
-#         print("Your NRIC cannot be empty or blank.")
-#         continue
+    if nric == "":
+        print("Your NRIC cannot be empty or blank.")
+        continue
 
-#     if len(nric) == 9:
-#         nine_characters = True
-#     else:
-#         print("Your NRIC number must contain 9 characters.")
+    if len(nric) == 9:
+        nine_characters = True
+    else:
+        print("Your NRIC number must contain 9 characters.")
 
-#     if nric[0].isupper() and nric[-1].isupper():
-#         first_last_letter_is_upper = True
-#     else:
-#         print("Your first letter and last letter must be uppercase.")
+    if nric[0].isupper() and nric[-1].isupper():
+        first_last_letter_is_upper = True
+    else:
+        print("Your first letter and last letter must be uppercase.")
 
-#     if nric[1:8].isdigit():
-#         between_is_seven_digit = True
-#     else:
-#         print("There must be seven digits between your first letter and last letter.")
+    if nric[1:8].isdigit():
+        between_is_seven_digit = True
+    else:
+        print("There must be seven digits between your first letter and last letter.")
     
-#     if nine_characters and first_last_letter_is_upper and first_letter_is_in_list and between_is_seven_digit:
-#         break
-# print("Your NRIC number is " + str(nric) + " . Have a nice day.")
+    if nine_characters and first_last_letter_is_upper and first_letter_is_in_list and between_is_seven_digit:
+        break
+print("Your NRIC number is " + str(nric) + " . Have a nice day.")
     
 
 
@@ -275,42 +275,42 @@ student_indexes = [1042, 1099, 1031, 1120, 1075, 1042, 1108, 1019, 1063, 1099, 1
 
 # Write a program that will ask the user for a password, and check if the password fits all criteria
 
-at_least_eight_char = False
-lower_case = False
-upper_case = False
-got_num = False
-is_alnum = False
+# at_least_eight_char = False
+# lower_case = False
+# upper_case = False
+# got_num = False
+# is_alnum = False
 
-print("This is Demon Kitties official website. Please sign in with your DKfanclub account in order to view our videos.")
+# print("This is Demon Kitties official website. Please sign in with your DKfanclub account in order to view our videos.")
 
-while True:
-    DKfanclub = input("What is your DKfancub password? : ").strip()
+# while True:
+#     DKfanclub = input("What is your DKfancub password? : ").strip()
 
-    if DKfanclub == "":
-        print("Your DKfanclub password cannot be empty or blank.")
-        continue
+#     if DKfanclub == "":
+#         print("Your DKfanclub password cannot be empty or blank.")
+#         continue
 
-    if len(DKfanclub) >= 8:
-        at_least_eight_char = True
-    else:
-        print("Your DKfanclub password must contain at least 8 characters.")
+#     if len(DKfanclub) >= 8:
+#         at_least_eight_char = True
+#     else:
+#         print("Your DKfanclub password must contain at least 8 characters.")
 
-    for char in DKfanclub:
-        if char.isupper():
-            upper_case = True
-        if char.islower():
-            lower_case = True
-        if char.isdigit():
-            got_num = True    
+#     for char in DKfanclub:
+#         if char.isupper():
+#             upper_case = True
+#         if char.islower():
+#             lower_case = True
+#         if char.isdigit():
+#             got_num = True    
 
-    if DKfanclub.isalnum():
-        is_alnum = True
-    else:
-        print("There should not be any special characters in your DKfanclub password.")
+#     if DKfanclub.isalnum():
+#         is_alnum = True
+#     else:
+#         print("There should not be any special characters in your DKfanclub password.")
     
-    if is_alnum and got_num and at_least_eight_char and upper_case and lower_case:
-        break
-print("Your DKfanclub password number is " + str(DKfanclub) + " . Enjoy our videos and be cool! 😎 ")
+#     if is_alnum and got_num and at_least_eight_char and upper_case and lower_case:
+#         break
+# print("Your DKfanclub password number is " + str(DKfanclub) + " . Enjoy our videos and be cool! 😎 ")
 
 # You may use some of the following passwords to test your program:
 # - PassW0rd
