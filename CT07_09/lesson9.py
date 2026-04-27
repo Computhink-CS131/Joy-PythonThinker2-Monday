@@ -1,7 +1,3 @@
-print("Hello from lesson 9")
-print("Hello from lesson 9")
-
-
 # lesson 9 - Introduction to Functions
 
 # ## Recap 1: Input Processing
@@ -93,12 +89,12 @@ print("Hello from lesson 9")
 #   ☐☐☐☐
 #    ☐☐
 
-import turtle
+# import turtle
 
-windows = turtle.Screen()
-windows.setup(width=600, height=600)
-t = turtle.Turtle()
-t.color("Pink")
+# windows = turtle.Screen()
+# windows.setup(width=600, height=600)
+# t = turtle.Turtle()
+# t.color("Pink")
 
 # def drawsquares():
 #     t.pendown()
@@ -123,19 +119,19 @@ t.color("Pink")
 #     drawsquares()
 #     t.forward(25)
 
-def drawsquares():
-    t.pendown()
-    for i in range(4):
-        t.forward(20)
-        t.right(90)
-    t.penup()
-t.goto(25, -25)
-drawsquares()
-t.goto(0, -0)
-for i in range(2):
-    drawsquares()
-    t.forward(25)
-turtle.done()
+# def drawsquares():
+    # t.pendown()
+    # for i in range(4):
+        # t.forward(20)
+        # t.right(90)
+    # t.penup()
+# t.goto(25, -25)
+# drawsquares()
+# t.goto(0, -0)
+# for i in range(2):
+    # drawsquares()
+    # t.forward(25)
+# turtle.done()
 # 1. Import the ‘turtle’ library
 # 2. Set up the screen using ‘turtle.Screen()’
 # 3. Create a function, “draw_square” that will draw a 20x20 square
@@ -150,14 +146,61 @@ turtle.done()
 # 3. Create a function “draw_square” with a “size” parameter
 # 4. The “draw_square” function will draw a square of size*size around the (0,0) coordinate.
 # 5. Within a ‘for’ loop, use the “draw_square” function you have created to draw 7 squares around the (0,0) coordinate with the following sizes:50, 100, 150, 200, 250, 300, 350
+# import turtle
 
+# windows = turtle.Screen()
+# windows.setup(width = 600, height = 400)
+
+# t = turtle.Turtle()
+# t.shape("arrow")
+# t.color("pink")
+
+# t.penup()
+
+# def draw_square(size):
+#     t.pendown()
+#     for i in range(4):
+#         t.forward(size)
+#         t.right(90)
+#     t.penup()
+
+# size = 350
+# for i in range(7):
+#     t.goto(-size/2, size/2)
+#     draw_square(size)
+#     size -= 50
+
+# turtle.done()
 # ## Task 3: Shape Creator
 # You want to create a shape creator program that will draw any shape you want simply by giving the program the length and number of sides that the shape must have.
 
 # To do this, you need to create a function with 2 parameters:
 # - ‘length’
 # - ‘num_sides’
+# import turtle
+#
+# windows = turtle.Screen()
+# windows.setup(width = 600, height = 600)
 
+# t = turtle.Turtle()
+# t.shape("arrow")
+# t.color("pink")
+
+
+# t.penup()
+
+# def draw_shape(length, num_size):
+    # t.pendown()
+    # for i in range(num_size):
+        # t.forward(length)
+        # t.right(360/num_size)
+    # t.penup()
+
+# t.goto(0, 200)
+# for i in range(3, 50):
+#     draw_shape(20, i)
+
+# turtle.done()
 # 1. Create a function called draw_shape() that takes in the length of the sides, as well as the number of sides.
 # 2. The function should draw a shape with the length of sides and number of sides given by calculating the exterior angle
 # 3. Using the  draw_shape() function, draw the following:
@@ -176,3 +219,32 @@ turtle.done()
 # 3. Create a turtle object and lift the pen to move without drawing
 # 4. Define ‘draw_shape’ function to draw a regular polygon based on specified length and number of sides
 # 5. Define ‘draw_house’ function that uses the ‘draw_shape’ function to combine a square and a triangle
+
+import turtle
+
+windows = turtle.Screen()
+windows.setup(width = 600, height = 600)
+
+t = turtle.Turtle()
+t.shape("arrow")
+t.color("hotpink")
+
+t.penup()
+
+def drawshape(length,num_size):
+    t.pendown()
+    for i in range(num_size):
+        t.forward(length)
+        t.left(360/num_size)
+    t.penup()
+
+def drawhouses():
+    drawshape(100, 4)
+    t.goto(t.xcor(), t.ycor() + 100)
+    drawshape(100, 3)
+
+# length = input("How long do you want the shape to be?")
+
+drawhouses()
+
+turtle.done()
